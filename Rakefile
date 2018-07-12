@@ -12,7 +12,7 @@ namespace :greeting do
 
 end
 
-namespace :db do 
+namespace :db do
 
   desc 'performs migration'
   task :migrate do
@@ -20,7 +20,7 @@ namespace :db do
   end
 
   desc 'seeds db'
-  task seed do 
-    require_relative '../db/seeds'
+  task seed do
+    require_relative './db/seeds'
   end
 end
