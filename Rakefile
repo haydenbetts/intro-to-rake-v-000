@@ -19,8 +19,8 @@ end
 namespace :db do
 
   desc 'performs migration'
-  task :migrate do
-
+  task :migrate => :environment do
+    Pry.start
   end
 
   desc 'seeds db'
