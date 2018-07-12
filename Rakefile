@@ -11,3 +11,16 @@ namespace :greeting do
   end
 
 end
+
+namespace :db do 
+
+  desc 'performs migration'
+  task :migrate do
+
+  end
+
+  desc 'seeds db'
+  task seed do 
+    require_relative '../db/seeds'
+  end
+end
